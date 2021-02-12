@@ -34,16 +34,21 @@ h1 {
 }
 /*Text Glow End*/
 
+/*fonts end here */
+
+/*header*/
+
 .headerwrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*body*/ 
 .bodywrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
 .moon { 
@@ -51,9 +56,30 @@ h1 {
 	height: 25em;
 	background-color: transparent;
 	border-radius: 50%;
-    box-shadow: 25px 10px 0px 0px #fff; }
+    box-shadow: 25px 10px 0px 0px #fff;
+    display: inline-block;
     
+}
+.moon {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInDownBig; 
+    animation-duration: 7s; 
+  }
 
+ .sophie {
+    margin: 6.25em;
+
+    max-width: 100%;
+    animation: glow 2s infinite alternate;
+    box-shadow: 1em 1em 3em 1em #EAAAED;
+
+ }
+
+ .sophie {
+     animation: glow 3s infinite alternate;
+ }
 
 /*IPHONE*/
 
@@ -67,11 +93,21 @@ h1 {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: -1em;
+    }
+    .bodywrapper {
+        display: flex;
+        flex-direction: column;
     }
     .moon {
         width: 12.5em;
         height: 12.5em;
+        margin: 2em;
     }
+    .sophie {
+        margin: 3em;
+    }
+
 
 }
 
@@ -95,3 +131,6 @@ h1 {
             text-shadow: 0 0 6em #380049;
         }
     }
+
+
+
