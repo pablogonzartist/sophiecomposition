@@ -9,8 +9,8 @@ html {
 
 @font-face {
     font-family: 'lynojean';
-    src: url('fonts/fonts.lynojean-webfont.woff2') format('woff2'),
-         url('fonts/fonts.lynojean-webfont.woff') format('woff');
+    src: url('../fonts/fonts.lynojean-webfont.woff2') format('woff2'),
+         url('../fonts/fonts.lynojean-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
