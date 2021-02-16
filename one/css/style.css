@@ -1,0 +1,101 @@
+html {
+   
+    background: linear-gradient(90deg, rgba(234,170,237,1) 4%, rgba(116,161,134,1) 32%, rgba(216,142,92,1) 65%, rgba(156,168,222,1) 92%);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+/*fonts*/ 
+
+@font-face {
+    font-family: 'lynojean';
+    src: url('../fonts/lynojean-webfont.woff2') format('woff2'),
+         url('../fonts/lynojean-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*fonts end here*/
+
+
+h1 {
+  font-family: lynojean;
+  font-size: 8em;
+  color: rgb(255, 255, 255);
+  /*blur 
+  filter: blur(0.1em); */
+  
+}
+
+.text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 1em;
+  animation: flash 10s;
+}
+
+#text2 {
+  animation: color-change 4s infinite;
+  mix-blend-mode: darken;
+}
+
+#text2:hover {
+  transform: scale(1.5);
+}
+
+img{
+  display: flex;
+  max-width: 100%;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* animation */
+@keyframes color-change {
+  0% {color:#48eb48;}
+  50% {color: rgb(73, 73, 175);}
+  100% {color:#cc13b3;}
+}
+
+
+@keyframes change {
+    0% {
+    background-position: 0 50%;
+  }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+  
+      } }
+
+
+      @media only screen and (max-width: 50em) {
+        h1 {
+            display: flex;
+      
+            font-size: 4em;
+            text-align: center;
+            align-content: flex-start;
+            flex-direction: column;
+      
+
+        }
+
+        .text {
+
+        }
+        #text2 {
+          display: block;
+
+        }
+
+        #text2:hover {
+          transform: none;
+        }
+    
+    }
