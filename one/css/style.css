@@ -53,6 +53,20 @@ img{
   text-align: center;
 }
 
+.text2 {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+}
+
 /* animation */
 @keyframes color-change {
   0% {color:#48eb48;}
