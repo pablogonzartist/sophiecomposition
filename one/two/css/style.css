@@ -98,12 +98,17 @@ a:link {
 
         }
 
+        .cold {
+          margin: 2em;
+        }
+
         .home {
           display: flex;
           text-align: center;
           flex-direction: column;
           font-size: .50em;
           margin: 1em;
+  
         }
         
 
