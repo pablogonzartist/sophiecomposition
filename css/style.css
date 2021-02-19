@@ -107,6 +107,7 @@ audio { margin-top: 14em;}
     .bodywrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .moon {
         width: 12.5em;
@@ -115,6 +116,7 @@ audio { margin-top: 14em;}
     }
     .sophie {
         margin: 3em;
+        align-self: center;
     }
 
     audio {
